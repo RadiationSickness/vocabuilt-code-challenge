@@ -1,0 +1,57 @@
+.create-post-container {
+    width: 75vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto 0;
+
+    .create-post-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 1em;
+
+            &:last-of-type {
+                margin-bottom: 1.5em;
+            }
+
+            label {
+                font-weight: bold;
+                padding: 0.2em  0.2em  0.2em 0;
+            }
+
+            input, textarea {
+                padding: 0.5em;
+                border: solid 3px #6BA292;
+                border-radius: 0.2em;
+                outline: none;
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        button {
+            width: 8em;
+            height: 3em;
+            border: solid 3px #6BA292;
+            border-radius: 0.2em;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
