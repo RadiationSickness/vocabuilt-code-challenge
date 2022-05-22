@@ -1,3 +1,12 @@
-<div>
-    foobar
+<div class="blog-post-container">
+    <div class="blog-post" *ngFor="let blog of blogPosts">
+        <div class="blog-header">
+            <h1>{{blog.title}}</h1>
+        </div>
+
+        <div [innerHTML]="blog.text" class="blog-content">
+        </div>
+
+        <p class="blog-timestamp"><b>Posted: </b><i>{{blog.timestamp}}</i></p>
+    </div>
 </div>

@@ -1,0 +1,16 @@
+<div class="create-post-container">
+    <div class="create-post-form" [formGroup]="createPostForm">
+        <div>
+            <label>Title</label>
+            <input type="text" maxlength="100" [formControlName]="'title'" placeholder="Blog Title Here.." />
+        </div>
+
+        <div>
+            <label>Blog Content</label>
+            <textarea maxlength="10000" [formControlName]="'text'" placeholder="Blog Content Here..."></textarea>
+        </div>
+
+        <!-- NOTE: Should check form validity before enabling button -->
+        <button type="submit" (click)="submitBlogPost()">Create</button>
+    </div>
+</div>
